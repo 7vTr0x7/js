@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr = ["zoe", "aatrox", "aerox", "vtrox"];
+
+      document.write(arr + "<br>");
+      arr.sort();
+
+      document.write(arr + "<br>");
+
+      arr.reverse();
+      document.write(arr + "<br>");
+
+      arr.pop(); // removes last element
+
+      document.write(arr + "<br>");
+
+      arr.push("zed"); // adds element to end of the array
+      document.write(arr + "<br>");
+
+      arr.shift(); // removes element of first index // *********************** shift
+
+      document.write(arr + "<br>");
+
+      arr.unshift("gwen"); // adds element to first index // *********************** unshift
+
+      document.write(arr + "<br>");
+
+      let ex = ["irelia", "oriana", "annie"];
+
+      let array = arr.concat(ex); // *********************** concat
+
+      document.write(array + "<br>");
+
+      let exj = array.join("-"); // *********************** join
+
+      document.write(exj + "<br>");
+
+      let exSlice = array.slice(0, 3); // *********************** slice
+      document.write(exSlice + "<br>");
+
+      let exSlice2 = array.slice(2); // *********************** slice
+      document.write(exSlice2 + "<br>");
+
+      let exSlice3 = array.slice(-5, -1); // *********************** slice
+      document.write(exSlice3 + "<br>");
+
+      array.splice(3, 0, "zoe", "TF", "vtrox"); // to add new value to an array without deleting or deleting existing element form index
+      // *********************** splice
+      document.write(array + "<br>");
+
+      array.splice(3, 2);
+      //           |    |
+      //          index elements
+      //                  to delete
+
+      document.write(array + "<br>");
+
+      array.splice(-2, 2);
+      //           |    |
+      //         index elements
+      //                to delete
+
+      document.write(array + "<br>");
+
+      let check = Array.isArray(array); // *********************** isArray
+      let a = 10;
+
+      document.write(check + "<br>");
+      document.write(Array.isArray(a) + "<br>");
+
+      let i1 = array.indexOf("vtrox"); // *********************** indexOf // to get index of element
+      // if there is no value then it will return -1
+      document.write(i1 + "<br>");
+
+      let i2 = array.indexOf("vtrox", 2);
+      //                       |      |
+      //                        element    index to search from
+      document.write(i2 + "<br>");
+
+      let i3 = array.lastIndexOf("vtrox");
+      document.write(i3 + "<br>");
+
+      let i4 = array.lastIndexOf("vtrox", 2);
+      document.write(i4 + "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      // **********  filter() - filter method creates an new array of all array elements that passes the condition
+
+      let ages = [10, 16, 18, 20, 22];
+      let adult = 18;
+
+      document.write(ages + "<br>");
+
+      let cond = ages.filter(check);
+
+      function check(age) {
+        return age >= 18;
+      }
+      document.write(cond + "<br>");
+
+      //// **********  toString() - converts an array in a string
+
+      let arr = ["yo", "sup", "man"];
+
+      let a = arr.toString();
+
+      document.write(a + "<br>");
+
+      //  ******* fill()  - will fill all the elements of array with a static value
+      let ary = ["yo", "sup", "man"];
+
+      ary.fill("yup");
+      document.write(ary + "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr = ["zoe", "aatrox", "aerox", "vtrox"];
+
+      document.write(arr + "<br>");
+
+      //*********** includes
+      let find = arr.includes("aatrox"); /// to search in array return true or false
+
+      document.write(find + "<br>");
+
+      // **********  some() - checks is any one element passes the condition then return true - we have to write funtion to use some()
+
+      let ages = [10, 16, 18, 20, 22];
+      let adult = 18;
+
+      document.write(ages + "<br>");
+
+      let cond = ages.some(check);
+
+      function check(age) {
+        return age >= 18 ? true : false;
+      }
+      document.write(cond + "<br>");
+
+      // **********  every() - is similar to some() but it checks if every element of an array passes the condition then only it will return true
+
+      let ages1 = [18, 19, 21, 20, 22];
+      let adult1 = 18;
+      document.write(ages1 + "<br>");
+
+      let condi = ages1.every(check1);
+
+      function check1(age) {
+        return age >= 18 ? true : false;
+      }
+      document.write(condi + "<br>");
+
+      // **********  find() - it returns the value of first element in an array that passes the condition
+
+      let ages2 = [10, 16, 18, 20, 22];
+      let adult2 = 18;
+      document.write(ages2 + "<br>");
+
+      let cond1 = ages1.find(check2);
+
+      function check2(age) {
+        return age >= 18 ? true : false;
+      }
+      document.write(cond1 + "<br>");
+
+      // **********  findIndex() - it returns the index of first element in an array that passes the condition
+
+      let ages3 = [10, 16, 18, 20, 22];
+      let adult3 = 18;
+      document.write(ages3 + "<br>");
+
+      let cond2 = ages1.find(check3);
+
+      function check3(age) {
+        return age >= 18 ? true : false;
+      }
+      document.write(cond2 + "<br>");
+    </script>
+  </head>
+
+  <body></body>
+</html>

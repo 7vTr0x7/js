@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Size Webpage with DOM Manipulation</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+      }
+      header {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+      }
+      nav {
+        background-color: #3498db;
+        color: #ecf0f1;
+        padding: 10px;
+      }
+      main {
+        padding: 20px;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+      .box {
+        background-color: #ecf0f1;
+        border: 1px solid #bdc3c7;
+        padding: 20px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="header">Full-Size Webpage with DOM Manipulation</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="box">
+        <h2>DOM Manipulation Practice</h2>
+        <button id="changeTextBtn">Click me to change text!</button>
+        <p id="displayText">This is the initial text.</p>
+      </div>
+
+      <div class="box">
+        <h2>More Content</h2>
+        <p>
+          This is another box with more content. You can manipulate this too!
+        </p>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+      </div>
+
+      <!-- Add more content as needed -->
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

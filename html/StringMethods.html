@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let str = "In publishing and graphic design and graphic design ";
+
+      console.log(str.length);
+
+      let a = str.toLocaleLowerCase();
+      console.log(a);
+
+      let b = str.toUpperCase();
+      console.log(b);
+
+      /*   *****************  includes ****************
+             used to find word or character then will return true or false 
+      */
+
+      let check = str.includes("and");
+      console.log(check);
+
+      /*   *****************  startswith ****************
+             used to finds first word or character then will return true or false 
+      */
+
+      let check1 = str.startsWith("In");
+      console.log(check1);
+
+      /*   *****************  endsWith ****************
+             used to finds last word or character then will return true or false 
+      */
+
+      let check2 = str.endsWith("design");
+      console.log(check2);
+
+      /*   *****************  search ****************
+             used to find word or character then will return its index
+      */
+
+      let search = str.search("and");
+      console.log(search);
+
+      /*   *****************  match ****************
+             used to find word or character then will return all the matches in an array
+      */
+
+      let match = str.match(/g/g);
+      console.log(match);
+
+      /*   *****************  indexOf ****************
+             used to return index of char or word
+      */
+
+      let indx = str.indexOf("and");
+      console.log(indx);
+
+      /*   *****************  lastIndexOf ****************
+            it will search char or words from  end to strt then will return index
+      */
+
+      let lastIndxOf = str.lastIndexOf("and");
+      console.log(lastIndxOf);
+
+      /*   *****************  replace ****************
+            it will replace words form string
+      */
+
+      let replace = str.replace("design", "art"); // this will only replce the first word from start
+      console.log(replace);
+
+      // to replace all similar words
+      let replace1 = str.replace(/design/g, "art"); // this will  replce words globally
+      console.log(replace1);
+
+      let str1 =
+        "   In publishing and   graphic design   and   graphic design   ";
+
+      /*   *****************  trim ****************
+            it will remove extra spaces
+      */
+
+      let trim = str1.trim(); // this will only replce the first word from start
+      console.log(trim);
+
+      /*   *****************  charAt ****************
+            it will return the character of index provided
+      */
+
+      let charAt = str.charAt(10); // this will only replce the first word from start
+      console.log(charAt);
+
+      /*   *****************  charCodeAt  ****************
+            it will return ASCII code of given character
+
+            A to Z - 65 to 90  a to z - 97 to 122
+      */
+
+      let charCode = str.charCodeAt(10); // this will only replce the first word from start
+      console.log(charCode);
+
+      /*   *****************  fromCharCode  ****************
+            it will return ASCII code of given number
+      */
+
+      let fromCharCode = String.fromCharCode(68); // this will only replce the first word from start
+      console.log(fromCharCode);
+
+      let a1 = "hello";
+      let a2 = "world";
+      let b1 = "sup";
+
+      let c1 = a1.concat(a2, b1);
+
+      console.log(c1);
+
+      /*   *****************  split  ****************
+           it split every word or string and converts them  into array
+      */
+
+      let split = str.split(" "); // this will only replce the first word from start
+      console.log(split);
+
+      let split1 = str.split("and"); // this will only replce the first word from start
+      console.log(split1);
+
+      /*   *****************  repeat  ****************
+           it repeats a string 
+      */
+
+      let repeat = str.repeat(2); // this will only replce the first word from start
+      console.log(repeat);
+
+      /*   *****************  slice  ****************
+           it slice string  from given strt index to end index
+      */
+
+      let slice = str.slice(6, 17); // this will only replce the first word from start
+      console.log(slice);
+
+      /*   *****************  subStr  ****************
+           it will return string  from given index 
+      */
+
+      let subStr = str.substr(6); // this will only replce the first word from start
+      console.log(subStr);
+
+      /*   *****************  substring  ****************
+           it will return string  from given index and work similar as slice()
+      */
+
+      let subString = str.substring(6); // this will only replce the first word from start
+      console.log(subString);
+    </script>
+  </head>
+  <body></body>
+</html>

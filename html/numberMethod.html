@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = "98";
+
+      let num = Number(a);
+      console.log(num);
+
+      /* ********* parseInt *********
+        returns demials into number
+      */
+
+      let num1 = 10.98;
+      let ex = parseInt(num1);
+      console.log(ex);
+
+      /* ********* parseFloat *********
+        returns number into decimals
+      */
+
+      let num2 = 10.99;
+      let ex2 = parseFloat(num2);
+      console.log(ex2);
+
+      /* ********* isFinite *********
+        returns true or false if number is finite or not
+      */
+
+      let num3 = 10;
+      let ex3 = Number.isFinite(num3);
+      console.log(ex3);
+
+      /* ********* isFinite *********
+        returns true or false if number is finite or not
+      */
+
+      let num4 = 10.98;
+      let ex4 = Number.isInteger(num4);
+      console.log(ex4);
+
+      /* ********* toFixed *********
+         limits decimals to given value
+      */
+
+      let num5 = 10.98868757657;
+      let ex5 = num5.toFixed(2);
+      console.log(ex5);
+
+      /* ********* toPrecision *********
+          returns round up value
+      */
+
+      let num6 = 10.94;
+      let ex6 = num6.toPrecision(2);
+      console.log(ex6);
+    </script>
+  </head>
+  <body></body>
+</html>

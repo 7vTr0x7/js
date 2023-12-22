@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /* 
+           *********** Map() ************
+
+           map() performs funtionality on exiting array without Changing it and creates new array
+        */
+
+      let arr = [10, 20, 30, 40, 50];
+
+      let newArr = arr.map(test);
+      console.log(newArr);
+
+      function test(x) {
+        return x * 10;
+      }
+
+      let students = [
+        {
+          name: "sam",
+          class: "bcs",
+          age: 18,
+        },
+        {
+          name: "sammy",
+          class: "bca",
+          age: 20,
+        },
+        {
+          name: "samuel",
+          class: "bsc",
+          age: 21,
+        },
+      ];
+
+      let stud = students.map(check);
+      console.log(stud);
+
+      function check(x) {
+        return x.name + " " + x.age;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
