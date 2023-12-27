@@ -17,3 +17,12 @@ const getName = (user) => {
 
 // chaining map filter reduce
 console.log(users.filter(under30).map(getName));
+
+const output = users.reduce((acc, curr) => {
+  if (curr.age < 30) {
+    acc.push(curr.firstName);
+  }
+  return acc;
+}, []);
+
+console.log(output);
