@@ -26,4 +26,4 @@ we don't know what happens in createOrder it can call payment function twice
 
 */
 
-// when we have a callback function and we pass it in another functions we are giving the control of our function to other code
+// when we have a callback function and we pass it in another functions we are giving the control of our function to some other function
