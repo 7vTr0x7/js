@@ -14,7 +14,10 @@ promise
     return proceedToPayment(orderId);
   })
   .then(function (paymentInfo) {
-    console.log(paymentInfo);
+    return showOrderSummary(paymentInfo);
+  })
+  .then(function (walletDetails) {
+    updateWallet(walletDetails);
   })
   .catch(function (err) {
     console.log(err.message); // this catch will return error if any error occurs in code
@@ -46,6 +49,21 @@ function createOrder(cart) {
 function proceedToPayment(orderId) {
   return new Promise(function (resolve, reject) {
     resolve("payment successful");
+    console.log("payment successful");
+  });
+}
+
+function showOrderSummary() {
+  return new Promise(function (resolve, reject) {
+    resolve("summary");
+    console.log("summary");
+  });
+}
+
+function updateWallet() {
+  return new Promise(function (resolve, reject) {
+    resolve("updated wallet");
+    console.log("updated wallet");
   });
 }
 
