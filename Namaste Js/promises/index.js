@@ -25,12 +25,10 @@ const promise = createOrder(cart);
 // now we will attach a call back function to promise object
 
 promise.then((orderId) => {
-  payment(orderId);
+  return payment(orderId);
 });
 
 // in first example we were passing the callback function in another function with risk to it
 
 // but in second example we attached the callback to promise
 // is case or promise it will wait until the data comes then only it will call callback function
-
-
