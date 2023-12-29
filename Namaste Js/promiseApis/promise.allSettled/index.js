@@ -32,7 +32,7 @@ Promise.allSettled([p1, p2, p3])
   });
 
 // example 2
-// one promise fails promise.allSettled wait for other promises to settle and returns array of data and error respectively
+// one promise fails promise.allSettled wait for other promises to settle and returns array of objects of data and error respectively
 
 const p4 = new Promise((resolve, reject) => {
   setTimeout(() => {
