@@ -50,8 +50,13 @@ const p6 = new Promise((resolve, reject) => {
     reject("p6 fails");
   }, 2000);
 });
+const p7 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("p7 success");
+  }, 2000);
+});
 
-Promise.allSettled([p4, p5, p6])
+Promise.allSettled([p4, p5, p6, p7])
   .then((result) => {
     console.log(result);
   })
