@@ -1,5 +1,4 @@
 // promise.race takes array of promises and run all of them simultaneously
 // and will return data from promise
-// only promise to settles first will be returned
-// if the first promise fails then it will return error
-// whatever the case it first promise to resolves or rejects it will return it
+// it wil wait for the first success/resolves then only it will return data of that promise
+// if all of them fails then it will return aggregate error which is array of all errors
