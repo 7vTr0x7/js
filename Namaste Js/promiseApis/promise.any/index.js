@@ -63,5 +63,5 @@ Promise.any([p4, p5, p6, p7])
   })
   .catch((err) => {
     console.error(err);
-    console.log(err.errors); // printing aggregate errors
+    console.log(err.errors); // aggregate errors
   });
