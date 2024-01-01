@@ -42,3 +42,32 @@ obj.x();
 /*
 value of this in objects method is object "obj"
 */
+
+// ** call ,apply and bind methods (sharing methods)
+
+// value of this can be modified using call ,apply and bind
+
+const student1 = {
+  studName: "vtrox",
+  getName() {
+    console.log(this.studName);
+  },
+};
+
+student1.getName();
+
+const student2 = {
+  studName: "nothing",
+};
+
+/*
+ if we want to share the getName() method of student1 with student2
+
+  we can achieve this by overriding this keyword
+*/
+
+student1.getName.call(student2); // value of this is student2
+
+/*
+  we override the this of student1 by passing student2
+*/

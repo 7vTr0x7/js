@@ -17,3 +17,9 @@ note - "this" keyword works differently in strict mode and non-strict mode
 
 4. this inside object's methods
    --> value of this in objects method is object
+
+5. call ,apply and bind methods (sharing methods)
+   -->value of this can be modified using call ,apply and bind
+
+   --> if we want to share the getName() method of student1 with student2
+   we can achieve this by overriding this keyword
