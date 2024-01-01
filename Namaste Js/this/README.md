@@ -23,3 +23,22 @@ note - "this" keyword works differently in strict mode and non-strict mode
 
    --> if we want to share the getName() method of student1 with student2
    we can achieve this by overriding this keyword
+
+6. this inside arrow function
+   --> arrow functions do not have there own "this"
+
+   --> they take the value of there lexical environment where they enclosed
+   --> this will be it enclosing lexical context
+   enclosing lexical context - out side the lexical environment
+   were this obj is lexically present inside code
+   it is present in global space
+   value of this will be global object
+
+7. this inside nested Arrow function
+   --> arrow functions do not have there own "this"
+
+   --> this will be it enclosing lexical context
+   enclosing lexical context - out side the lexical environment
+   were this y is lexically present inside code
+   it is present in object1 space
+   value of this will be object 1
