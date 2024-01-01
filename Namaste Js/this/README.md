@@ -14,3 +14,6 @@ note - "this" keyword works differently in strict mode and non-strict mode
 3. this value depends on how this is called
    --> x(); - when function is called without reference then its undefined
    window.x() - when function is called with window reference then its window object
+
+4. this inside object's methods
+   --> value of this in objects method is object

@@ -24,6 +24,21 @@ function x() {
 
 // ** this value depends on how this is called
 
-x(); // when function is called without reference then its undefined 
+x(); // when function is called without reference then its undefined
 
-window.x() //hen function is called with window reference then its window object 
+window.x(); //hen function is called with window reference then its window object
+
+// ** this inside object's methods
+
+const obj = {
+  a: 10,
+  x() {
+    console.log(this);
+  },
+};
+
+obj.x();
+
+/*
+value of this in objects method is object "obj"
+*/
