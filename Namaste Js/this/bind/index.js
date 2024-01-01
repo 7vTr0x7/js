@@ -21,17 +21,11 @@ let details = function (town, city) {
   console.log(`${this.firstName} ${this.lastName}  ${town} ${city}`);
 };
 
-// details.call(user3, "parner", "Anagar");
-// details.call(user4, "parner", "pune");
+details.call(user3, "parner", "Anagar");
+details.call(user4, "parner", "pune");
 
-// bind method
+// apply
 
-// bind vs call
-// bind give us a copy of function to invoke it later
+// difference between call and apply method is how we pass arguments
 
-// bind method binds details() with object and returns copy of that method
-
-let printDetails = details.bind(user3, "parner", "Anagar"); // it returns us a function
-console.log(printDetails); // function
-
-printDetails();
+details.apply(user3, ["parner", "Anager"]); // in apply we pass an array
